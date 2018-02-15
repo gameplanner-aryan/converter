@@ -1,0 +1,124 @@
+<!Doctype html>
+<html>
+<head>
+<title>Currency Converter</title>
+<script language="javascript">
+function INRConverter()
+{
+document.converter.dollar.value=document.converter.INR.value*0.016
+document.converter.euro.value=document.converter.INR.value*0.013
+document.converter.pound.value=document.converter.INR.value*0.012
+document.converter.yen.value=document.converter.INR.value*3.95
+document.converter.UAID.value=document.converter.INR.value*0.058
+document.converter.kwd.value=document.converter.INR.value*0.0048
+}
+function dollarConverter()
+{
+document.converter.INR.value=document.converter.dollar.value*63.41
+document.converter.euro.value=document.converter.dollar.value*0.83
+document.converter.pound.value=document.converter.dollar.value*0.74
+document.converter.yen.value=document.converter.dollar.value*250.30
+document.converter.UAID.value=document.converter.dollar.value*3.67
+document.converter.kwd.value=document.converter.dollar.value*0.30
+}
+function euroConverter()
+{
+document.converter.dollar.value=document.converter.euro.value*1.21
+document.converter.INR.value=document.converter.euro.value*76.44
+document.converter.pound.value=document.converter.euro.value*0.89
+document.converter.yen.value=document.converter.euro.value*301.9
+document.converter.UAID.value=document.converter.euro.value*4.43
+document.converter.kwd.value=document.converter.euro.value*0.36
+}
+function poundConverter()
+{
+document.converter.dollar.value=document.converter.pound.value*1.35
+document.converter.INR.value=document.converter.pound.value*85.89
+document.converter.euro.value=document.converter.pound.value*1.12
+document.converter.yen.value=document.converter.pound.value*339.22
+document.converter.UAID.value=document.converter.pound.value*4.98
+document.converter.kwd.value=document.converter.pound.value*0.41
+}
+function yenConverter()
+{
+document.converter.dollar.value=document.converter.yen.value*0.0040
+document.converter.INR.value=document.converter.yen.value*0.25
+document.converter.pound.value=document.converter.yen.value*0.0030
+document.converter.euro.value=document.converter.yen.value*0.0033
+document.converter.UAID.value=document.converter.yen.value*0.015
+document.converter.kwd.value=document.converter.yen.value*0.0012
+}
+function UAIDConverter()
+{
+document.converter.dollar.value=document.converter.UAID.value*0.27
+document.converter.INR.value=document.converter.UAID.value*17.26
+document.converter.pound.value=document.converter.UAID.value*0.20
+document.converter.yen.value=document.converter.UAID.value*68.14
+document.converter.euro.value=document.converter.UAID.value*0.23
+document.converter.kwd.value=document.converter.UAID.value*0.082
+}
+function kwdConverter()
+{
+document.converter.dollar.value=document.converter.kwd.value*3.32
+document.converter.INR.value=document.converter.kwd.value*210.34
+document.converter.pound.value=document.converter.kwd.value*2.45
+document.converter.yen.value=document.converter.kwd.value*830.22
+document.converter.UAID.value=document.converter.kwd.value*12.19
+document.converter.euro.value=document.converter.kwd.value*2.75
+}
+</script>
+
+</head>
+<body bgcolor="cyan">
+<h1 align="center">Currency Converter</h1>
+<form name="converter">
+<table border="5" align="center">
+<tr>
+<td><b>INR:</b></td><td><input type="text" name="INR" onChange="INRConverter()"/></td></tr>
+
+<tr>
+<td><b>Dollar:</b></td><td><input type="text" name="dollar" onChange="dollarConverter()"/></td></tr>
+
+
+<tr>
+<td><b>Euro:</b></td><td><input type="text" name="euro" onChange="euroConverter()"/></td></tr>
+
+
+<tr>
+<td><b>Pound:</b></td><td><input type="text" name="pound" onChange="poundConverter()"/></td></tr>
+
+
+<tr>
+<td><b>Yen:</b></td><td><input type="text" name="yen" onChange="yenConverter()"/></td></tr>
+
+
+<tr>
+<td><b>United Arab Emirates Dinar:</b></td><td><input type="text" name="UAID" onChange="UAIDConverter()"/></td></tr>
+
+<tr>
+<td><b>Kuwaiti Dinar:</b></td><td><input type="text" name="kwd" onChange="kwdConverter()"/></td></tr>
+
+<td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
